@@ -4,7 +4,9 @@ document.querySelector('#login-form').addEventListener('submit', async (ev)=>{
     const user = document.getElementById('user').value;
     const password = document.getElementById('password').value;
     const headers = new Headers();
-    headers.append('Content-Type',"application/json");
+    headers.append('Accept','application/json');
+    headers.append('Content-Type', "application/json");
+    headers.append('Access-Control-Allow-Origin', '*');
 
     try{
         const responseLogin = await fetch('https://proyecto-data-warehouse.herokuapp.com/login', {
