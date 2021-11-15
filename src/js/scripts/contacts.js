@@ -940,8 +940,9 @@ class UI {
     }
 }
 
+popUpContactWindow.style.display = 'none';
+
 document.addEventListener("DOMContentLoaded", () => {
-    popUpContactWindow.style.display = 'none';
     const ui = new UI();
     const contacts = new Contacts();
     const allRegionCities = new AllRegionsCities();

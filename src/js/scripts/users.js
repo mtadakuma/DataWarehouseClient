@@ -229,9 +229,9 @@ class UI {
     }
 }
 
+popUpUserWindow.style.display = 'none';
 
 document.addEventListener("DOMContentLoaded", () => {
-    popUpUserWindow.style.display = 'none';
     const ui = new UI();
     const users = new Users();
     users.getUsers().then(users => {

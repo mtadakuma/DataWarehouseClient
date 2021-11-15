@@ -370,8 +370,9 @@ class UI{
     }
 }
 
+popUpCompanyWindow.style.display = 'none';
+
 document.addEventListener("DOMContentLoaded", () => {
-    popUpCompanyWindow.style.display = 'none';
     const ui = new UI();
     const companies = new Companies();
     const allRegionCities = new AllRegionsCities();
